@@ -11,4 +11,25 @@
   -webkit-text-size-adjust: 100%;
 }
 
+.hover-animation {
+  position: relative;
+}
 
+.hover-animation img {
+  animation-name: hover;
+  animation-duration: 5s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+@keyframes hover {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  50% {
+    transform: translate3d(0, -8px, 0);
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+}
