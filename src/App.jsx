@@ -42,7 +42,7 @@ function App() {
     <div className="bg-neutral-900 py-9 px-5  relative overflow-hidden">
       <img
         src={backgroundImage}
-        className="absolute top-0 left-0 object-cover w-full object-center -z-0 scale-150"
+        className="absolute top-0 left-0 object-cover w-full object-center -z-0 scale-175 md:scale-150"
       />
       <div className="z-10 relative">
         <Navbar />
