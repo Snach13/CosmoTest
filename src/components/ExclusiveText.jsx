@@ -1,9 +1,9 @@
 export default function ExclusiveText() {
   return (
-    <div className="lg:grid lg:grid-cols-12 lg:gap-8">
-      <div className="px-4 sm:px-6 sm:text-center md:mx-auto md:max-w-2xl lg:col-span-6 lg:flex lg:items-center lg:text-left">
+    
+      <div className="p-20 flex flex-col justify-center sm:px-6 sm:text-center md:mx-auto md:max-w-2xl lg:col-span-6 lg:flex lg:items-center lg:text-left">
         <div>
-          <h1 className="mt-4 text-center text-4xl font-bold tracking-tight text-white sm:text-5xl md:text-6xl">
+          <h1 className="pt-10 text-center text-4xl font-bold tracking-tight text-white sm:text-5xl md:text-6xl">
             EXCLUSIVE ACCESS TO <span className="text-[#26E2FF]">333</span>
             MEMBERS
           </h1>
@@ -15,6 +15,6 @@ export default function ExclusiveText() {
           </p>
         </div>
       </div>
-    </div>
+    
   );
 }

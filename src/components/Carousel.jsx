@@ -1,3 +1,5 @@
+import ButtonWithOutline from "./ButtonWithOutline";
+
 export default function Carousel({ products }) {
   return (
     <div>
@@ -24,6 +26,10 @@ export default function Carousel({ products }) {
             </a>
           ))}
         </div>
+      </div>
+
+      <div className="flex items-center justify-center p-10 h-50vh">
+        <ButtonWithOutline text={"MINT FAM PASS"}/>
       </div>
     </div>
   );
