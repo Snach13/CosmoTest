@@ -20,7 +20,7 @@ export default function Carousel({ products }) {
               <div className="mt-4 flex items-center justify-center  text-center font-medium text-gray-900">
                 <h3 className="text-white text-2xl">{product.name}</h3>
               </div>
-              <p className="mt-1 text-sm italic text-gray-500">
+              <p className="mt-1 text-sm text-center text-gray-500">
                 {product.description}
               </p>
             </a>
@@ -29,7 +29,7 @@ export default function Carousel({ products }) {
       </div>
 
       <div className="flex items-center justify-center p-10 h-50vh">
-        <ButtonWithOutline text={"MINT FAM PASS"}/>
+        <ButtonWithOutline text={"MINT FAM PASS"} />
       </div>
     </div>
   );

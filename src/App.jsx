@@ -37,24 +37,26 @@ function App() {
       imageSrc: keyImage,
     },
   ];
-  
+
   return (
     <div className="bg-neutral-900 py-9 px-5  relative overflow-hidden">
       <img src={backgroundImage} className="absolute top-0 -z-0 scale-150" />
       <div className="z-10 relative">
         <Navbar />
         <div className="flex flex-col items-center justify-self-end">
-          <Timer />
-          <div className="flex items-center justify-between">
-            <div className="w-2/5">
+          <div className="w-full flex flex-row items-center justify-center">
+            <Timer />
+          </div>
+          <div className="flex  flex-col md:flex-row items-center justify-between">
+            <div className="w-full md:w-2/5">
               <HeroMain />
             </div>
-            <div className="w-2/5">
+            <div className="w-full md:w-2/5 hover-animation">
               <img src={mainKey} />
             </div>
-            <div className="w-2/5 flex flex-col items-center">
-              <img src={stars} className="mb-20"/>
-              <div className="flex items-center mt-20">
+            <div className="w-full md:w-2/5 flex flex-col items-center">
+              <img src={stars} className="my-20  md:mb-20" />
+              <div className="flex items-center md:mt-20">
                 <div className="flex flex-col items-center mr-5">
                   <p className="text-white text-[30px] leading 10">333</p>
                   <p className="text-white text-sm leading-10">
@@ -67,14 +69,24 @@ function App() {
                 </div>
                 <div className="flex flex-col items-center">
                   <p className="text-white text-[30px] leading 10">15%</p>
-                  <p className="text-white text-sm leading-10">Legendary Keys</p>
+                  <p className="text-white text-sm leading-10">
+                    Legendary Keys
+                  </p>
                 </div>
               </div>
             </div>
           </div>
         </div>
         <ExclusiveText />
-        <Carousel products={products} />
+        <div className="relative">
+          <div>
+            <Carousel products={products} />
+          </div>
+          <img
+            className="hidden md:block absolute bottom-1/2 left-20"
+            src={stars}
+          />
+        </div>
       </div>
       <Footer />
     </div>
