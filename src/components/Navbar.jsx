@@ -12,8 +12,8 @@ const Navbar = () => {
         <img src={favicon} alt="favicon" />
       </div>
       <div className="flex w-full flex-col-reverse md:flex-row py-1 gap-2 md:space-y-0  cursor-pointer bg-black opacity-60 rounded-tr-3xl rounded-bl-3xl shadow border border border border border-neutral-700">
-        <div className="flex-grow   flex flex-row items-center justify-center space-x-5 ">
-          <p className="text-white  font-semibold underline underline-offset-8">
+        <div className="flex-grow ml-10 flex flex-row items-center justify-center space-x-5 ">
+          <p className="text-white ml-10 font-semibold underline underline-offset-8">
             MINT
           </p>
           <p className="text-white font-semibold">ABOUT</p>
