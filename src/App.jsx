@@ -42,7 +42,7 @@ function App() {
     <div className="bg-neutral-900 py-9 px-5  relative overflow-hidden">
       <img
         src={backgroundImage}
-        className="absolute top-52 -z-0 scale-175   md:scale-150"
+        className="absolute top-0 left-0 -z-0 scale-175 md:scale-150"
       />
       <div className="z-10 relative">
         <Navbar />
@@ -51,10 +51,10 @@ function App() {
             <Timer />
           </div>
           <div className="flex  flex-col md:flex-row items-center justify-between">
-            <div className="w-full md:w-2/5 order-2">
+            <div className="w-full md:w-2/5 order-1">
               <HeroMain />
             </div>
-            <div className="w-full md:w-2/5 hover-animation order-1">
+            <div className="w-full md:w-2/5 hover-animation order-2">
               <img src={mainKey} />
             </div>
             <div className="w-full md:w-2/5 flex flex-col items-center order-3">
